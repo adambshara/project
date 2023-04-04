@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="store.js" async></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="nav main-nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="store.html">STORE</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="cart.html">CART</a></li>
+          <li><a href="contactus.html">Contact US</a></li>
+        </ul>
+      </nav>
+      <h1 class="band-name band-name-large">Ahmad Bshara</h1>
+    </header>
+
+    <section class="content-section container">
+      <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+        </div>
+        <div class="card-details">
+          <form>
+            <p>Card number</p>
+            <div class="c-number" id="c-number">
+              <input
+                id="number"
+                class="cc-number"
+                placeholder="Card number"
+                maxlength="19"
+                required="required"
+              />
+              <i class="fa-solid fa-credit-card" style="margin: 0"></i>
+            </div>
+
+            <div class="c-details">
+              <div>
+                <p>Expiry date</p>
+                <input
+                  id="e-date"
+                  class="cc-exp"
+                  placeholder="MM/YY"
+                  required
+                  maxlength="5"
+                  required="required"
+                />
+              </div>
+              <div>
+                <p>CVV</p>
+                <div class="cvv-box" id="cvv-box">
+                  <input
+                    id="cvv"
+                    class="cc-cvv"
+                    placeholder="CVV"
+                    required
+                    maxlength="3"
+                    required="required"
+                  />
+                  <i
+                    class="fa-solid fa-circle-question"
+                    title="3 digits on the back of the card"
+                    style="cursor: pointer"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="email">
+              <p>Email</p>
+              <input
+                type="email"
+                placeholder="example@email.com"
+                id="email"
+                required="required"
+              />
+            </div>
+            <!-- <button>PAY NOW</button> -->
+          </form>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">
+          PURCHASE
+        </button>
+      </section>
+    </section>
+
+    <footer class="main-footer">
+      <div class="container main-footer-container">
+        <h3 class="band-name">Ahmad Bshara</h3>
+        <ul class="nav footer-nav">
+          <li>
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="Images/YouTube Logo.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.spotify.com" target="_blank">
+              <img src="Images/Spotify Logo.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="Images/Facebook Logo.png" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

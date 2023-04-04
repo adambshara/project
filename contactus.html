@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="modernizr.custom.05819.js"></script>
+    <script src="store.js" async></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="nav main-nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="store.html">STORE</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="cart.html">CART</a></li>
+          <li><a href="contactus.html">Contact US</a></li>
+        </ul>
+      </nav>
+      <h1 class="band-name band-name-large">Ahmad Bshara</h1>
+    </header>
+    <article>
+      <h2>Order Form</h2>
+      <div id="errorMessage"></div>
+      <form action="results.html">
+        <fieldset id="deliveryinfo">
+          <legend>Delivery Information</legend>
+          <label for="nameinput">Name</label>
+          <input type="text" id="nameinput" name="name" required="required" />
+          <label for="addrinput">Street Address</label>
+          <input
+            type="text"
+            id="addrinput"
+            name="address"
+            required="required"
+          />
+          <label for="cityinput">City</label>
+          <input type="text" id="cityinput" name="city" required="required" />
+          <label for="emailinput">Email</label>
+          <input
+            type="email"
+            id="emailinput"
+            name="email"
+            required="required"
+          />
+          <label for="phoneinput">Phone</label>
+          <input type="text" id="phoneinput" name="phone" required="required" />
+        </fieldset>
+        <fieldset id="orderinfo">
+          <fieldset id="sizebox"></fieldset>
+          <fieldset id="toppingbox">
+            <label for="instructions" id="instrlabel"
+              >Special Instructions</label
+            >
+            <textarea
+              id="instructions"
+              name="instructions"
+              rows="3"
+              cols="60"
+              placeholder="special requests, delivery details"
+            ></textarea>
+          </fieldset>
+        </fieldset>
+        <fieldset id="submitbutton">
+          <input type="submit" id="submitBtn" value="Submit" />
+        </fieldset>
+      </form>
+    </article>
+
+    <footer class="main-footer">
+      <div class="container main-footer-container">
+        <h3 class="band-name">Ahmad Bshara</h3>
+        <ul class="nav footer-nav">
+          <li>
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="Images/YouTube Logo.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.spotify.com" target="_blank">
+              <img src="Images/Spotify Logo.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="Images/Facebook Logo.png" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <!-- <form action="results.htm" novalidate="novalidate"></form> -->
+  </body>
+</html>

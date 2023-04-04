@@ -1,0 +1,176 @@
+  ol, ul {
+    list-style: none;
+ }
+ article {
+    width: 960px;
+    text-align: left;
+    background: ivory;
+    padding: 20px;
+ }
+ 
+ h2 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+ }
+ 
+ #errorMessage {
+    display: none;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    margin: 15px auto 5px;
+    background: #e3d5ba;
+    color: black;
+    border: 5px solid rgb(190,50,38);
+    font-weight: bold;
+ }
+ 
+ 
+ /* form */
+ form {
+    padding: 10px;
+ }
+ 
+ fieldset {
+    margin-bottom: 10px;
+    position: relative;
+    padding: 2.5em 1em 0.5em 1em;
+    background: #e3d5ba;
+ }
+ 
+ fieldset fieldset {
+    padding-top: 15px;
+ }
+ 
+ legend, #submit, #instrlabel {
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bold;
+ }
+ 
+ legend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.25em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+ }
+ 
+ fieldset fieldset legend {
+    font-size: 1em;
+    margin-top: 25px;
+    top: -30px;
+    left: 8px;
+ }
+ 
+ input, textarea {
+    font-size: 1em;
+ }
+ 
+ #instructions {
+    display: block;
+ }
+ 
+ #deliveryinfo, #orderinfo, #additionalinfo, #submitbutton {
+    border: none;
+ }
+ 
+ #deliveryinfo label {
+    display: block;
+    float: left;
+    clear: left;
+    margin-top: 5px;
+ }
+ 
+ #deliveryinfo input {
+    display: block;
+    margin-left: 130px;
+ }
+ 
+ #nameinput, #emailinput, #addrinput {
+    width: 30em;
+ }
+ 
+ #cityinput, #phoneinput {
+    width: 12em;
+ }
+ 
+ #crustbox label, #toppingbox label {
+    margin-right: 25px;
+ }
+ 
+ #instrlabel {
+    display: block;
+    margin: 1em 0 0.5em 0;
+ }
+ 
+ #submitBtn {
+    font-size: 1.25em;
+ }
+ 
+ #submitbutton {
+    background: inherit;
+    border: none;
+    padding: 0.5em 0 0 0;
+    text-align: center;
+ }
+ article,form{
+    width: 70%px;
+   margin: auto;
+ }
+ /* from here for credit card */
+ .card-details{
+	padding: 20px 80px;
+}
+.card-details .c-number{
+	width: 100%;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	padding: 0 12px;
+	margin-top: 10px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+input#number,#cvv{
+	border: none;
+	border-radius: 3px;
+	outline: none;
+}
+.c-details{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+.cc-exp{
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	height: 50px;
+	margin-top: 10px;
+	padding: 12px;
+	width: 150px;
+}
+.c-details .cvv-box{
+	border: 1px solid #aaa;
+	margin-top: 10px;
+	padding: 12px;
+	height: 50px;
+	border-radius: 3px;
+	display: flex;
+	justify-content: space-between;
+	width: 108px;
+}
+.cc-cvv{
+	width: 60px;
+}
+.email input{
+	width: 100%;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	padding: 12px;
+	height: 50px;
+	margin-top: 10px;
+}
