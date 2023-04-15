@@ -23,22 +23,13 @@ function ready() {
     button.addEventListener("click", addToCartClicked);
   }
 
-  document
-    .getElementsByClassName("btn-purchase")[0]
-    .addEventListener("click", purchaseClicked);
+  // document
+  //   .getElementsByClassName("btn-purchase")[0]
+  //   .addEventListener("click", purchaseClicked);
 }
-//pressing add to cart
+//purchasing
 function purchaseClicked() {
-  validatecreditcard();
-  let isValid = validatecreditcard();
-
-  console.log("isValid", isValid);
-  if (!isValid) {
-    alert("Please fill out the info");
-  }
-  // if (num === 0 && eDate === 0 && cvv === 0) {
-  //   alert("Please fill out the info");
-  // }
+  debugger;
   var cartItems = document.getElementsByClassName("cart-items")[0];
   if (!cartItems.hasChildNodes()) {
     alert("Your cart is empty. Please add items before checking out.");
@@ -242,19 +233,37 @@ function validatecreditcard() {
     let cvvBox = document.getElementById("cvv-box");
     if (elen.length < 3) {
       cvvBox.style.border = "1px solid red";
-      return false;
     } else {
       cvvBox.style.border = "1px solid greenyellow";
     }
   });
-
-  return true;
 }
+// // Create a new Date object representing the current date and time
+// const currentDate = new Date();
 
-function isValidCreditCardLength(creditCardNumber) {
-  // Remove any spaces or dashes from the credit card number
-  creditCardNumber = creditCardNumber.replace(/[ -]/g, "");
+// // Set the purchase date to the current date and time
+// const purchaseDate = currentDate;
 
-  // Check if the length is between 13 and 19 digits
-  return creditCardNumber.length >= 13 && creditCardNumber.length <= 19;
+// // Display the purchase date in a formatted string
+// const formattedPurchaseDate = purchaseDate.toLocaleString();
+// console.log("Purchase Date: " + formattedPurchaseDate);
+
+function showPurchaseDate() {
+  // Create a new Date object representing the current date and time
+  const currentDate = new Date();
+
+  // Set the purchase date to the current date and time
+  const purchaseDate = currentDate;
+
+  // Display the purchase date in a formatted string
+  const formattedPurchaseDate = purchaseDate.toLocaleString();
+  document.getElementById("purchaseDate").innerHTML =
+    "Purchase Date: " + formattedPurchaseDate;
 }
+var currentDate = new Date();
+
+// Get the input element by its id
+var currentDateInput = document.getElementById("currentDateInput");
+
+// Set the value of the input field to the current date
+currentDateInput.value = currentDate.toDateString();

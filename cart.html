@@ -36,8 +36,9 @@
           <strong class="cart-total-title">Total</strong>
           <span class="cart-total-price">$0</span>
         </div>
+
         <div class="card-details">
-          <form>
+          <form onsubmit="purchaseClicked()">
             <p>Card number</p>
             <div class="c-number" id="c-number">
               <input
@@ -90,12 +91,23 @@
                 required="required"
               />
             </div>
-            <!-- <button>PAY NOW</button> -->
+            <!-- <h4>Purchase Date</h4>
+            <button onclick="showPurchaseDate()">Show Purchase Date</button> -->
+            <h4>Purchase</h4>
+            <label for="currentDateInput">Current Date:</label>
+            <input type="text" id="currentDateInput" readonly />
+            <p id="purchaseDate"></p>
+            <input
+              class="btn btn-primary btn-purchase"
+              type="submit"
+              value="Purchase"
+            />
           </form>
+          <!-- <button>PAY NOW</button> -->
         </div>
-        <button class="btn btn-primary btn-purchase" type="button">
+        <!-- <button class="btn btn-primary btn-purchase" type="button">
           PURCHASE
-        </button>
+        </button> -->
       </section>
     </section>
 

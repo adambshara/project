@@ -24,11 +24,11 @@
       <h1 class="band-name band-name-large">Ahmad Bshara</h1>
     </header>
     <article>
-      <h2>Order Form</h2>
+      <h2>Claim Form</h2>
       <div id="errorMessage"></div>
       <form action="results.html">
         <fieldset id="deliveryinfo">
-          <legend>Delivery Information</legend>
+          <legend>Personal Information</legend>
           <label for="nameinput">Name</label>
           <input type="text" id="nameinput" name="name" required="required" />
           <label for="addrinput">Street Address</label>
@@ -65,9 +65,14 @@
             ></textarea>
           </fieldset>
         </fieldset>
-        <fieldset id="submitbutton">
-          <input type="submit" id="submitBtn" value="Submit" />
-        </fieldset>
+        <!-- <fieldset id="submitbutton"> -->
+        <input
+          class="btn btn-primary btn-purchase"
+          type="submit"
+          id="submitBtn"
+          value="Submit"
+        />
+        <!-- </fieldset> -->
       </form>
     </article>
 
